@@ -1,0 +1,102 @@
+// Carbon Framework v0.1 Alpha
+// Documentation: 
+// Developed by Triangle (https://triangle.mx)
+// carbon.sass (Main Style File)
+    
+// Typography Import (Google Fonts Recommended, Default: Roboto)
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500')
+
+// Color Variables
+$white: #ffffff
+$nearWhite: #fafafa
+$black: #000000
+$nearBlack: #1b1b1b
+$grey: #eeeeee
+
+$blue: #1e81ff
+$red: #e74c3c
+$yellow: #ffb61e
+$green: #2ecc71
+$purple: #9b59b6
+$orange: #e67e22
+
+$mainColor: $blue
+$darkColor: $nearBlack
+$lightColor: $white
+$transparentDarkColor: rgba(27,27,27,.5)
+
+// Typographic Varibles 
+$bodyFont: 'Roboto', 'Helvetica Neue', sans-serif
+$headlineFont: 'Roboto', 'Helvetica Neue', sans-serif
+$extraFont: 'Roboto', 'Helvetica Neue', sans-serif
+
+$fontSizeGiant: 18px
+$fontSize: 16px
+$fontSizeMobile: 14px
+
+// Transition Variables
+$customBezier: cubic-bezier(1,.55,0,.87)
+$transition: .3s $customBezier
+$transitionAlt: .5s $customBezier
+
+// Border-Radius Variables
+$borderRadius: 5px
+$borderRadiusLarge: 20px
+
+// Shadow Variables 
+$boxShadow: 5px 5px 50px 0px $transparentDarkColor
+$boxShadowAlt: 10px 10px 100px 0px $transparentDarkColor
+$textShadow: 5px 5px 50px $transparentDarkColor
+
+// Main Styling
+body
+    background-color: $lightColor
+    overflow-x: hidden !important
+    font-family: $bodyFont
+    font-size: $fontSize
+    color: $darkColor
+    font-weight: 500
+
+@media (max-width: 600px)
+    body
+        font-size: $fontSizeMobile
+
+
+@media (max-width: 1500px)
+    body
+        font-size: $fontSizeGiant
+
+h1,h2,h3,h4,h5,h6
+    font-family: $headlineFont
+
+a, .link
+    text-decoration: none
+    color: $mainColor
+    transition: $transition
+
+    &:hover, &:active, &:visited
+        color: $darkColor
+        opacity: .9
+        text-decoration: none
+
+
+// Selection
+::-moz-selection
+    text-shadow: none
+    background: $mainColor
+    color: $lightColor
+
+::selection
+    text-shadow: none
+    background: $mainColor
+    color: $lightColor
+
+img::-moz-selection
+    background: transparent
+
+img::selection
+    background: transparent
+
+img::-moz-selection
+    background: transparent
+
