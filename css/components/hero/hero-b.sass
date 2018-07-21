@@ -1,0 +1,41 @@
+// Hero-B Component
+// Part of the Carbon Framework
+// Developed by Triangle (https://triangle.mx)
+
+// Background Image (You can also set the background-image directly on the HTML file with the "style" attribute)
+$bgImage: ''
+
+.ca-hero-b
+    background-color: $darkColor
+    color: $lightColor
+
+    width: 100%
+    height: 100vh
+    
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+
+    background-image: url($bgImage)
+    background-repeat: none
+    background-position: center center
+    background-size: cover 
+
+    .content
+        .title
+            font-size: 400%
+            text-shadow: $textShadow
+            
+            span
+                font-weight: 700
+
+        .lead
+            font-size: 140%
+            font-weight: 300
+            margin-top: -13px
+            margin-bottom: 10px
+
+            b 
+                font-weight: 700

@@ -3,8 +3,9 @@
 // Developed by Triangle (https://triangle.mx)
 // carbon.sass (Main Style File)
     
-// Typography Import (Google Fonts Recommended, Default: Roboto)
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500')
+// Typography Import (Google Fonts Recommended, If needed add another @import, Default: Montserrat & Lato)
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700')
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700')
 
 // Color Variables
 $white: #ffffff
@@ -26,9 +27,9 @@ $lightColor: $white
 $transparentDarkColor: rgba(27,27,27,.5)
 
 // Typographic Varibles 
-$bodyFont: 'Roboto', 'Helvetica Neue', sans-serif
-$headlineFont: 'Roboto', 'Helvetica Neue', sans-serif
-$extraFont: 'Roboto', 'Helvetica Neue', sans-serif
+$bodyFont: 'Lato', 'Helvetica Neue', sans-serif
+$headlineFont: 'Montserrat', 'Helvetica Neue', sans-serif
+$extraFont: 'Montserrat', 'Helvetica Neue', sans-serif
 
 $fontSizeGiant: 18px
 $fontSize: 16px
@@ -42,9 +43,11 @@ $transitionAlt: .5s $customBezier
 // Border-Radius Variables
 $borderRadius: 5px
 $borderRadiusLarge: 20px
+$btnBorderRadius: 250px
 
 // Shadow Variables 
-$boxShadow: 5px 5px 50px 0px $transparentDarkColor
+$boxShadow: 0px 0px 50px 0px $transparentDarkColor
+$coloredBoxShadow: 0px 0px 20px 0px $mainColor
 $boxShadowAlt: 10px 10px 100px 0px $transparentDarkColor
 $textShadow: 5px 5px 50px $transparentDarkColor
 
@@ -100,3 +103,11 @@ img::selection
 img::-moz-selection
     background: transparent
 
+// Partials
+// Main Components
+@import 'components/main/buttons.sass'
+@import 'components/main/utilities.sass'
+
+// Hero Components
+@import 'components/hero/hero-a.sass'
+@import 'components/hero/hero-b.sass'
