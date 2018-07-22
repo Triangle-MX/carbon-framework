@@ -37,7 +37,7 @@ $fontSizeMobile: 14px
 
 // Transition Variables
 $customBezier: cubic-bezier(1,.55,0,.87)
-$transition: .3s $customBezier
+$transition: .2s $customBezier
 $transitionAlt: .5s $customBezier
 
 // Border-Radius Variables
@@ -82,6 +82,8 @@ a, .link
         opacity: .9
         text-decoration: none
 
+li
+    list-style: none
 
 // Selection
 ::-moz-selection
@@ -104,6 +106,9 @@ img::-moz-selection
     background: transparent
 
 // Partials
+// Custom Styling
+@import 'custom.sass'
+
 // Main Components
 @import 'components/main/buttons.sass'
 @import 'components/main/utilities.sass'
@@ -111,3 +116,6 @@ img::-moz-selection
 // Hero Components
 @import 'components/hero/hero-a.sass'
 @import 'components/hero/hero-b.sass'
+
+// Other Components
+@import 'components/other/floating-icon-list.sass'
