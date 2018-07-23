@@ -1,4 +1,4 @@
-# Triangle Carbon
+<img src="https://triangle-mx.github.io/carbon-framework/assets/Carbon%20Logo.svg" width="300px">
 A Component Framework built with Bootstrap and Vue.js users in mind.
 
 ### What is Carbon?
