@@ -11,3 +11,4 @@ Carbon is the main chemical element found in life. So, the Carbon Framework is t
 We used **SASS** and **JS** to develop most of the core components, and we built the whole thing so that **it runs smoothly over Bootstrap 4** (Twitter **Bootstrap is not 100%** required, but some components are built to work **only** with Bootstrap).
 
 ## Documentation
+You can check our documentation <a href="https://github.com/Triangle-MX/carbon-framework/wiki">here</a>.
